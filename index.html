@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodFeed</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
+    <script src="./redditService.js"></script>
+    <script src="./app.js"></script>
+</head>
+<body>
+    <header>
+        <h1>FoodFeed</h1>
+    </header>
+    <div class="div-container">
+        
+        
+        <form id="interests-form">
+           <div>
+            <h2>Welcome to FoodFeed!</h2>
+            Start by selecting as many interests as you want. <br>
+            
+            <p class="dw">Don't worry, you'll be able to change them later!</p>
+            <hr>
+           </div>
+            <div class="checkbox-buttons">
+                <label class="checkbox-button"><input type="checkbox" name="interest" value="recipes"> Recipes</label> <br>
+                <label class="checkbox-button"><input type="checkbox" name="interest" value="foodporn"> Foodporn</label> <br>
+                <label class="checkbox-button"><input type="checkbox" name="interest" value="vegan"> Vegan</label> <br>
+                <label class="checkbox-button"><input type="checkbox" name="interest" value="gourmet"> Gourmet</label> <br>
+                <label class="checkbox-button"><input type="checkbox" name="interest" value="regional"> Regional</label> <br>
+                <label class="checkbox-button"><input type="checkbox" name="interest" value="beginner"> Beginner</label> <br>
+                <label class="checkbox-button"><input type="checkbox" name="interest" value="professional"> Professional</label><br>
+                <label class="checkbox-button"><input type="checkbox" name="interest" value="nonloso"> Mmmhh</label><br>
+            </div>
+            <button type="button" id="submit-button">Confirm</button>
+            
+        </form>        
+    </div>
+
+    <div id="feed-container" class="hidden">
+        
+    </div>
+
+    <img class="posate" src="./assets/posate.png" alt="posate">
+
+</body>
+
+
+</html>

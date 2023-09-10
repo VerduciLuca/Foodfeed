@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700&family=Titan+One&display=swap');
+
+.hidden {
+    display: none;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    margin: 0px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #F5F5F5; 
+}
+
+h1{
+    font-family: 'Titan One', cursive;
+    color: #E74C3C; 
+    font-size: 3em;
+}
+
+h2{
+    font-family: 'Titan One', cursive;
+    letter-spacing: 0.1em;
+    font-weight: 100;
+    color: #333; 
+}
+
+#interests-form{
+    width: 80%;
+    padding: 1em;
+    border-radius: 1em;
+    color: #333; 
+    display: flex;
+    gap: 0.5em;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.div-container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.dw{
+    font-size: smaller;
+    font-weight: 300;
+    color: #555; 
+}
+
+
+.checkbox-button {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5em;
+    cursor: pointer;
+    width: 8rem;
+}
+
+.checkbox-button input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 30%;
+    margin-right: 0.5em;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.checkbox-button input[type="checkbox"]:checked {
+    background: none;
+    border: none;
+}
+
+.checkbox-button input[type="checkbox"]:checked::before {
+    content: "\2713"; /*  spunta */
+    display: block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    color: #E74C3C; 
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.checkbox-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em; 
+    justify-content: center;
+}
+
+#submit-button {
+    background: #E74C3C;
+    border: none;
+    border-radius: 0.5em;  
+    height: 2.5em;
+    color: #fff; 
+    font-family: 'Titan One', cursive;
+    font-size: 2em;
+    padding: 0.5em;
+    margin-top: 1em;
+}
+
+
+.posate{
+    margin-top: 3em;
+    width: 8em;
+    height: 8em;
+}
+
+.post-item {
+    background-color: #fff; 
+    border: 1px solid #ccc; 
+    margin: 10px; 
+    padding: 1em; 
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
+    border-radius: 5px; 
+    max-width: 95%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.post-item h3 {
+    font-size: 18px; 
+    margin-bottom: 5px; 
+}
+
+.post-item p {
+    font-size: 14px; 
+    margin: 5px 0;
+    font-weight: 300;
+}
+
+.post-item img {
+    max-width: 100%; 
+    height: auto;
+    border-radius: 1em;
+    margin: 1em;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+}
+
+#feed-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
