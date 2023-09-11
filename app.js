@@ -24,12 +24,17 @@ document.addEventListener('DOMContentLoaded', function () {
         const selectedInterests = Array.from(
             interestsForm.querySelectorAll('input[name="interest"]:checked')
         ).map((checkbox) => checkbox.value);
-
-        interestsForm.style.display = 'none';
-        localStorage.setItem('selectedInterests', JSON.stringify(selectedInterests));
-
-        loadFeed();
+    
+        if (selectedInterests.length === 0) {
+            alert('Choose at least one option');
+            return false;
+        } else {
+            interestsForm.style.display = 'none';
+            localStorage.setItem('selectedInterests', JSON.stringify(selectedInterests));
+            loadFeed();
+        }
     });
+    
 
     async function loadFeed() {
         try {
